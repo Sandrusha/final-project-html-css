@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (min-width: 320px) {
+    input[type="email"] {
+        width: 177px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .logo {
+        position: absolute;
+        width: 100%;
+        display: none;
+    }
+    .logo img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0.5rem;
+        height: 40px;
+        margin: 0 auto;
+        height: 40px;
+    }
+.logo2{
+    display:block;
+}
+    .hero-section {
+        height: 400px;
+    }
+    .hero-section .container {
+        max-width: 450px;
+        display: table;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .appointments .container {
+        padding: 2rem 0;
+        max-width: 480px;
+        display: table;
+        margin: 0 auto;
+    }
+    .appointments-flex > div:first-child  {
+        width: 90%;
+    }
+    .schedule {
+        width: 90%;
+    }
+    .schedule > div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .schedule > div > p {
+        margin-bottom: 0;
+    }
+    .appointments-flex > .paragraph {
+        text-align: left;
+    }
+    .appointments-flex:last-child {
+        display: flex;
+        align-items: flex-start;
+    }
+    .appointments-flex:last-child > div:first-child, .appointments-flex:last-child > ul, .appointments-flex:last-child > p {
+        margin-left: 2rem;
+    }
+    .diagnostics {
+        height: 500px;
+    }
+    .specialities, .doctors {
+        margin-bottom: 4rem;
+        max-width: 320px;
+        width: 100%;
+        display: table;
+        margin: 0 auto 4rem auto;
+    }
+    .services .paragraph {
+        max-width: 480px;
+        display: table;
+        margin: 0 auto 4rem auto;
+    }
+    .pediatric-diagnostics {
+        height: 500px;
+    }
+    .blog > div {
+        max-width: 450px;
+        width: 100%;
+        display: table;
+        margin: 0 auto 2rem auto;
+    }
+    .newsletter, .contact-us, .social-media {
+        max-width: 360px;
+        width: 100%;
+        display: table;
+        margin: 0 auto;
+    }
+    .contact-us h3 {
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero-section {
+        height: 500px;
+        padding: 13rem 0;
+    }
+    .hero-section .container {
+        max-width: 480px;
+        display: table;
+        margin: 0 auto;
+        padding: 0;
+    }
+    h1, h2 {
+        font-size: 2.5rem;
+    }
+    .diagnostics, .pediatric-diagnostics {
+        padding: 6rem 3rem;
+        height: 460px;
+    }
+    .services .container > div:nth-child(3) {
+        display: flex;
+        max-width: 768px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .services div div div {
+        margin: 0 auto 2rem auto;
+    } 
+    .blog h3 {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    h1, h2 {
+        font-size: 3rem;
+    }
+    .hero-section {
+        height: 700px;
+        text-align: left;
+        padding: 20rem 0;
+    }
+    .hero-section .container, .appointments .container, .about-us .container, .blog .container {
+        max-width: 970px;
+        width: 100%;
+        padding: 0 3rem;
+        display: table;
+        margin: 0 auto;
+    }
+    .hero-section .hidden-on-mobile {
+        display: block;
+        margin: 1rem 0;
+        color: #F1F3F9;
+        line-height: 1.6rem;
+        font-size: 1.3rem;
+        padding-right: 30rem;
+    }
+    .appointments .container > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .appointments .container > div > div {
+        flex-basis: 46%;
+        height: 260px;
+        position: relative;
+    }
+    .appointments-btn {
+        position: absolute;
+        bottom: 0;
+    }
+    .appointments-flex > div:last-child {
+        display: table;
+    }
+    .about-us h2 {
+        padding-top: 3.5rem;
+    }
+    .about-us .container div {
+        display: flex;
+    }
+    .diagnostics .paragraph, .pediatric-diagnostics .paragraph {
+        display: block;
+        margin: 1rem 0;
+        color: #F1F3F9;
+        line-height: 1.6rem;
+        font-size: 1.3rem;
+        padding-right: 20rem;
+    }
+    .services .container > div:nth-child(3) {
+        display: flex;
+        max-width: 960px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .services .container > div:nth-child(3) > div {
+        flex-basis: 270px;
+        position: relative;
+    }
+    .services .container > div:nth-child(3) > div > a {
+        width: 270px;
+        position: absolute;
+        border-radius: 5px;
+        bottom: 1rem;
+        left: 1rem; 
+    }
+    .services .container > div:nth-child(4) {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .services .container > div:nth-child(4) > div {
+        flex-basis: 20%;
+    }
+    .services .container > div:nth-child(4) > div > div {
+        text-align: left;
+        height: 150px;
+    }
+    .services span.hidden-on-mobile {
+        color: rgba(255,255,255,0.7);
+        text-decoration: none;
+        font-style: italic;
+        font-size: 1.1rem;
+        display: block;
+        text-transform: capitalize;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+    .services .container > div:nth-child(4) > div > a {
+        display: none;
+    }
+    .testimonials .container, .blog .container > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .testimonials h2, .blog h2 {
+        flex-basis: 100%;
+    }
+    .testimonials .container > div {
+        flex-basis: 50%;
+    }
+    .blog .container > div > div {
+        flex-basis: 30%;
+    }
+    .blog h3 {
+        font-size: 1.3rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    footer div {
+        flex-basis: 30%;
+    }
+    input[type="email"] {
+        width: 168px;
+    }
+    .doctors div:hover div {
+        margin-top: -49px;
+        position: relative;
+        z-index: 2;
+        transition: 1s ease all;
+    }
+    .services .container > div:nth-child(4) > div {
+        position: relative;
+    }
+    .services .container > div:nth-child(4) > div > a {
+        width: 100%;
+        position: absolute;
+        bottom: 32px;
+        z-index: -1;
+        display: block;
+    }   
+    .services .container > div:nth-child(4) > div:hover a {
+        z-index: 2;
+    }   
+    .blog .container div div div {
+        overflow: hidden;
+        width: 100%;
+        height: 180px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .logo{
+        display:block;
+    }
+    .logo2{
+        display:none;
+    }
+    header {
+        width: 1170px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .logo img {
+        margin: 5rem 0 0 3rem;
+    }
+    .hero-section .container, .appointments .container, .about-us .container, .blog .container {
+        max-width: 1170px;
+        display: table;
+        margin: 0 auto;
+    }
+    .appointments .container {
+        padding: 0;
+    }
+    .appointments .container .appointments-flex {
+        margin: 0;
+        margin: -2rem auto 3rem auto;
+    }
+    .appointments .container > div > div:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .appointments .container > div > div:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .appointments .container > div > div {
+        flex-basis: 25%;
+    }
+    .appointments-btn {
+        display: none;
+    }
+    .appointments .container > div > div {
+        height: 260px;
+    }
+    .appointments-flex {
+        position: relative;
+    }
+    .appointments-flex:hover {
+        -webkit-transform: translateY(-48px); 
+        -moz-transform: translateY(-48px); 
+        -ms-transform: translateY(-48px); 
+        -o-transform: translateY(-48px); 
+        transform: translateY(-48px); 
+        transition: .4s all ease;
+    }
+    .appointments-flex:hover .appointments-btn {
+        display: block;
+        position: absolute;
+        bottom: -48px;
+    }
+    .appointments-flex > div:last-child {
+        display: table;
+        z-index: -1;
+    }
+    .diagnostics .paragraph, .pediatric-diagnostics .paragraph {
+        padding-right: 40rem;
+    }
+    .services .container > div:nth-child(3) {
+        max-width: 1170px;
+    }
+    .services .container > div:nth-child(3) > div {
+        flex-basis: 300px;
+    }
+    .services .container > div:nth-child(3) > div > a {
+        width: 300px;
+    }
+    .social-media img, .social-media ul, .social-media p {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .social-media p {
+        text-align: left;
+    }
+    input[type="email"] {
+        width: 240px;
+    }
+    .blog .container div div div {
+        overflow: hidden;
+        width: 100%;
+        height: 210px;
+    }
+}

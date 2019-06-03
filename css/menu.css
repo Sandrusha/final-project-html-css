@@ -1,0 +1,281 @@
+/* @media screen and (max-width: 479px) { */
+    .logo {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        background-color: #2A93C9;
+        left: -200px;
+        padding: 1rem;
+        width: 200px;
+    }
+    nav {
+        position: absolute;
+        background-color: #2A93C9;
+        width: 200px;
+        top: 8rem;
+        padding: 1rem;
+        z-index: 1;
+        left:-200px;
+    }
+    .pages-submenu {
+        display: none;
+    }
+    nav > ul > li {
+        padding: 1rem;
+    }
+    nav > ul > li > a {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    nav > ul > li > a > img {
+        width: 18px;
+    }
+    nav > ul > li:last-child {
+        display: none;
+    }
+    .phone > div, .pin > div {
+        width: 30px;
+        height: 30px;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .phone > div > img, .pin > div > img {
+        width: 22px;
+    }
+    .ellipses {
+        position: absolute;
+        top: 3rem;
+        right: -333px;
+        background-color: #2A93C9;
+        padding: 1rem;
+    }
+    .ellipses > div {
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    .ellipses > div > div {
+        margin: 1rem;
+    }
+/* } */
+
+@media screen and (min-width: 480px) {
+    .logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: transparent;
+        top: 0;
+    }
+    nav {
+        position: absolute;
+        background-color: #2A93C9;
+        width: 300px;
+        top: 3rem;
+        padding: 1rem;
+        z-index: 1;
+        left:-300px;
+    }
+    .pages-submenu {
+        display: none;
+    }
+    nav > ul > li {
+        padding: 1rem;
+    }
+    nav > ul > li > a {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    nav > ul > li > a > img {
+        width: 18px;
+    }
+    nav > ul > li:last-child {
+        display: none;
+    }
+    .phone > div, .pin > div {
+        width: 30px;
+        height: 30px;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .phone > div > img, .pin > div > img {
+        width: 22px;
+    }
+    .ellipses {
+        position: absolute;
+        top: 3rem;
+        right: -333px;
+        background-color: #2A93C9;
+        padding: 1rem;
+    }
+    .ellipses > div {
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    .ellipses > div > div {
+        margin: 1rem;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+    header {
+        background-color: transparent;
+        height: auto;
+        position: absolute;
+        padding-top: 0rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .hamburger-icon, .ellipses-icon {
+        display: none;
+    }
+    .ellipses {
+        display: flex;
+        right: 0;
+        background-color: transparent;
+    }
+    .phone, .pin {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 0 3rem;
+    }
+    .phone > div, .pin > div {
+        width: 48px;
+        height: 48px;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .phone > div > img, .pin > div > img {
+        width: 28px;
+    }
+    .phone p, .pin p {
+        line-height: 1.5rem;
+        margin-left: 1rem;
+    }
+    nav {
+        background-color: #2A93C9;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        padding: 0;
+    }
+    .menu {
+        width: 1170px;
+        top: 12rem;
+    }
+    .menu-full {
+        width: 100%;
+        top: 0;
+        position: fixed;
+        border-radius: 0;
+    }
+    nav > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    nav > ul > li#active {
+        background-color: #1d86bc;
+    }
+    nav > ul > li:hover {
+        background-color: #1d86bc;
+        cursor: pointer;
+    }
+    nav > ul > li > a {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        margin: 0.5rem;
+    }
+    nav ul li a img {
+        width: 20px;
+    }
+    .pages-submenu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: absolute;
+        top: 3rem;
+        background-color: #fff;
+        width: 1170px;
+        left: 0;
+        height: 540px;
+        overflow: hidden;
+        padding: 2rem;
+        display: none;
+    }
+    #show-pages a::after{
+        content:"\025BE";
+        color: #fff;
+    }
+    #show-pages:hover .pages-submenu {
+        display: flex;
+    }
+    .pages-submenu > ul {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        padding-right: 2rem;
+    }
+    .pages-submenu > ul > li {
+        padding: 1rem 0;
+    }
+    .pages-submenu > ul > li > a  {
+        text-transform: capitalize;
+        color: #2a93c9;
+        text-decoration: none;
+        transition: .4s all ease;
+    }
+    .pages-submenu > ul > li > a:hover {
+        color: #1d678c;
+        padding-left: 1rem;
+    }
+    .pages-submenu > ul > li > a:hover::before {
+        content: url('../media/icons/right-arrow-blue.png');
+        padding-right: 10px;
+        padding-top:5px;
+    }
+    .pages-submenu > ul > li:first-child > a {
+        text-transform: uppercase;
+        color: #272727;
+        font-size: 1.3rem;
+        margin-right: 2rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .pages-submenu > ul > li:first-child > a:hover {
+        padding-left:0;
+    }
+    .pages-submenu > ul > li:first-child {
+        border-bottom: 1px solid #e5e5e5;
+    }
+}

@@ -1,0 +1,801 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    cursor: default;
+}
+
+
+/*-----GENERAL-----*/
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem; /* 32px */
+    margin: 3rem 0 1rem 0;
+    font-family: 'Asap', sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2rem; /* 32px */
+    font-family: 'Asap', sans-serif;
+    line-height: 1.5;
+    display: block;
+    padding: 0 2rem 2rem 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Asap', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.hidden-on-mobile {
+    display: none;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.paragraph {
+    margin: 1rem;
+    color: #F1F3F9;
+    line-height: 1.6rem;
+}
+
+
+/*-----HEADER-----*/
+header {
+    background-color: #2a93c9;
+    width: 100%;
+    height: 3.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 1rem;
+
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    display: none;
+}
+
+.logo2 {
+    display: none;
+}
+
+.logo2 img {
+    height: 40px;
+}
+
+.hamburger-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -5px);
+    transform: rotate(45deg) translate(-7px, -5px);
+}
+
+.ellipses-icon {
+    display: inline-block;
+    z-index: 1;
+}
+
+.ellipse1, .ellipse2, .ellipse3 {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.ellipses-icon.change .ellipse1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    border-radius: 0;
+    width: 30px;
+}
+
+.ellipses-icon.change .ellipse2 {opacity: 0;}
+
+.ellipses-icon.change .ellipse3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -5px);
+    transform: rotate(45deg) translate(-7px, -5px);
+    border-radius: 0;
+    width: 30px;
+}
+
+
+/*-----HERO SECTION-----*/
+.hero-section {
+    background-image: url("../media/images/bg-img-hero-section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+
+    color: #fff;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.hero-section .container {
+    padding: 0 3rem;
+}
+
+.hero-section a {
+    color: #272727;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.hero-section a:hover {
+    color: #fff;
+    background-color: #2a93c9;
+}
+
+
+/*-----APPOINTMENTS-----*/
+.appointments-flex {
+    color: #fff;
+    margin: 1rem 1rem 2rem 1rem;
+    padding: 2rem 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.appointments-flex:nth-child(odd) {
+    background-color: #2684b5;
+}
+
+.appointments-flex:nth-child(even) {
+    background-color: #2a93c9;
+}
+
+.appointments-btn a {
+    color: #272727;
+}
+
+.appointments-btn:hover a {
+    color: #fff;
+}
+
+/*---title & button---*/
+.appointments {
+    background-color: #F1F3F9;
+}
+
+.appointments .container {
+    padding: 2rem 0;
+}
+
+.appointments-flex > div:first-child {
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    padding: 0 0 1rem 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
+.appointments-flex > div:first-child > img {
+    width: 18px;
+    opacity: 0.5;
+    margin-right: 1rem;
+}
+
+.appointments-flex > div:last-child {
+    letter-spacing: 0.04em;
+    background-color: #fff;
+    color: #272727;
+    width: 100%;
+    display: inline-block;
+    border-bottom: none;
+    padding: 1rem;
+}
+
+.appointments-flex > div:last-child:hover {
+    background-color: #434445;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    display: inline-block;
+}
+/*---end title & button---*/
+
+/*---opening hours content---*/
+.schedule {
+    margin: 1rem;
+    color: #F1F3F9;
+}
+
+.schedule > div {
+    margin-bottom: 2rem;
+}
+
+.schedule > div > p {
+    color: #e5e5e5;
+    margin-bottom: 1rem;
+}
+/*---end opening hours content---*/
+
+/*---emergenncy content---*/
+.appointments-flex ul > li {
+    margin-top: 1rem;
+}
+
+.appointments-flex ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+/*---end of emergency content---*/
+
+
+/*-----ABOUT US-----*/
+.about-us {
+    background-color: #F1F3F9;
+}
+
+.about-us h2 {
+    text-align: center;
+}
+
+.about-us-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.img-circle {
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.img-circle img {
+    width: 60px;
+
+    animation-name: myAnimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes myAnimation {
+    0%   { transform: rotate(360deg)};
+}
+
+.about-us-flex .paragraph {
+    color: #868686;
+    text-align: center;
+}
+
+.about-us .container > div:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.about-us .container {
+    padding: 0 0 2rem 0;
+}
+
+
+/*-----DIAGNOSTICS-----*/
+.diagnostics {
+    background-image:url("../media/images/bg-img-diagnostics.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 600px;
+    color: #fff;
+    padding: 10rem 0;
+}
+
+.diagnostics h2 {
+    text-align: left;
+}
+
+.diagnostics h2+p {
+    text-align: left;
+    padding: 0 1rem 2rem 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.diagnostics a {
+    color: #272727;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+
+    display: inline-block;
+    margin: 1rem 2rem;;
+}
+
+.diagnostics a:hover {
+    color: #fff;
+    background-color: #2a93c9;
+}
+
+
+/*-----SERVICES-----*/
+.services .container {
+    padding: 0 1rem;
+}
+
+.services h2 {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+}
+
+.services .paragraph {
+    color: #868686;
+    text-align: center;
+}
+
+.specialities div, .doctors div {
+    margin-bottom: 2rem;
+}
+
+.specialities div img, .doctors div img {
+    width: 100%;
+    display: block;
+}
+
+.specialities div img+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    background-color: #2a93c9;
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.specialities div img+a:hover {
+    background: #272727;
+    padding-left: 2rem;
+    transition: .4s all ease;
+}
+
+.specialities div img+a:hover::before {
+    content: url("../media/icons/right-arrow.png");
+    padding-right: 0.3rem;
+}
+
+.doctors div:nth-child(odd) div {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2684B4;
+    display: block;
+    padding: 2.5rem 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.doctors div:nth-child(even) div {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2A93C9;
+    display: block;
+    padding: 2.5rem 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.doctors div a:nth-child(3) {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #272727;
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.doctors div a:nth-child(3):hover {
+    background: #272727;
+    color: #fff;
+    padding: 1rem;
+    margin-top: -2rem;
+}
+
+
+/*-----TESTIMONIALS-----*/
+.testimonials {
+    background: #F1F3F9;
+    padding-bottom: 3rem;
+}
+
+.testimonials h2 {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+}
+
+.testimonials .paragraph {
+    color: #868686;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-style: italic;
+    position: relative;
+    padding: 0 2rem 0 4rem;
+}
+
+.testimonials .container > div > p:before {
+    content: "\0201C";
+    font-size: 6rem;
+    position: absolute;
+    top: 1.4rem;
+    left: 0;
+    line-height: 30px;
+    color: #2a93c9;
+}
+
+.testimonials .container > div > div {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials .container > div > div > img {
+    margin-right: 2rem;
+    border-radius: 50%;
+    margin-left: 4rem;
+}
+
+.testimonials .container > div > div span:first-child {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    display: block;
+    color: #2a93c9;
+    font-weight: 700;
+}
+
+.testimonials .container > div > div span:nth-child(2) {
+    color: #bdbdbd;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-style: italic;
+} 
+
+.testimonials .container > div:nth-child(2) {
+    margin-bottom: 3rem;
+}
+
+
+/*-----PEDIATRIC DIAGNOSTICS-----*/
+.pediatric-diagnostics {
+    background-image:url("../media/images/bg-img-pediatric.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 600px;
+    color: #fff;
+    padding: 10rem 0;
+}
+
+.pediatric-diagnostics h2 {
+    text-align: left;
+}
+
+.pediatric-diagnostics h2+p {
+    text-align: left;
+    padding: 0 1rem 2rem 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.pediatric-diagnostics a {
+    color: #272727;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+
+    display: inline-block;
+    margin: 1rem 2rem;;
+}
+
+.pediatric-diagnostics a:hover {
+    color: #fff;
+    background-color: #2a93c9;
+}
+
+
+/*-----BLOG-----*/
+.blog h2 {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+}
+
+.blog .container {
+    padding: 0 1rem;
+}
+
+.blog .container div div img {
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+}
+.blog .container div div img:hover {
+    transform: scale(1.1);
+    transition: 1s ease all;
+}
+.blog .container div div div {
+    overflow: hidden;
+    width: 100%;
+    height: 280px;
+}
+
+.blog ul {
+    display: flex;
+    align-items: center;
+}
+
+.blog ul li:first-child {
+    color: #868686;
+}
+
+.blog ul li:last-child a {
+    text-decoration: none;
+    color: #2a93c9;
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+.blog .paragraph {
+    color: #868686;
+    margin: 1rem 0;
+}
+
+.blog .container > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2a93c9;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-radius: 50px;
+    display: table;
+    margin: 0 auto;
+}
+
+.blog .container > a:hover {
+    background-color: #272727;
+}
+
+
+/*-----MAP-----*/
+.map iframe {
+    width: 100%;
+    height: 450px;
+    margin-bottom: -4px;
+}
+
+iframe {
+    margin-top: 4rem;
+}
+
+
+/*-----FOOTER-----*/
+footer {
+    background-color: #2a93c9;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+input[type="email"] {
+    color: #272727;
+}
+
+/*---newsletter---*/
+.newsletter {
+    padding-bottom: 2rem;
+}
+
+.newsletter h3 {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    padding: 2.5rem 0 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid;
+}
+
+.newsletter .paragraph {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 1rem 0;;
+}
+
+input[type="email"] {
+    color: #272727;
+    padding: 1rem;
+    font-size: 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float:left;
+}
+
+::placeholder {
+    color:#272727;
+}
+
+button[type="submit"] {
+    color: #fff;
+    background-color: #272727;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(39,39,39, 0.7);
+    cursor: pointer;
+}
+
+/*---contact us---*/
+.contact-us h3 {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    padding: 2.5rem 0 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.contact-us ul {
+    padding: 1rem 0;
+}
+
+.contact-us ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-us ul li a {
+    text-decoration: none;
+}
+
+.contact-us ul li:last-child {
+    margin-bottom:n 0;
+}
+
+.contact-us ul li img {
+    width: 22px;
+    margin-right: 5px;
+}
+
+.contact-us ul li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*---social media---*/
+.social-media {
+    padding: 2.5rem 0 1rem 0;
+}
+
+.social-media > img {
+    display: table;
+    margin: 0 auto;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.social-media ul li {
+    margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media ul li a img {
+    width: 40px;
+}
+
+.social-media ul li a img:hover {
+    opacity: 0.9;
+}
+
+.social-media p {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.social-media p a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
