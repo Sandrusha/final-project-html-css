@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="media/icons/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/responsive.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+   <header class="container">
+        <div class="hamburger-icon" onclick="menuToggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="logo"><a href="#"><img src="media/logo-dark.png" /></a></div>
+        <div class="logo2"><a href="#"><img src="media/logo-dark.png" /></a></div>        <div class="ellipses-icon" onclick="ellipseToggle(this)">
+            <div class="ellipse1"></div>
+            <div class="ellipse2"></div>
+            <div class="ellipse3"></div>
+        </div>
+        <div class="ellipses">   
+            <div class="phone">
+                <div><img src="media/icons/phone.png" /> 
+                </div>
+                <p>1-800-1234-567<br />
+                1-800-3214-654</p>
+            </div>
+            <div class="pin">
+                <div><img src="media/icons/pin.png" /> 
+                </div>
+                <p>2130 Fulton Street San Diego<br />
+                CA 94117-1080 USA</p>
+            </div>
+        </div>
+   </header>
+   <nav id="menu" class="menu">
+        <ul>
+            <li id="active"><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">team</a></li>
+            <li id="show-pages"><a href="#">pages</a>
+                <div class="pages-submenu">
+                    <ul>
+                        <li><a href="#">elements</a></li>
+                        <li><a href="#">typography</a></li>
+                        <li><a href="#">forms</a></li>
+                        <li><a href="#">buttons</a></li>
+                        <li><a href="#">grid</a></li>
+                        <li><a href="#">tabs & accordions</a></li>
+                        <li><a href="#">progress bars</a></li>
+                        <li><a href="#">icons</a></li>
+                        <li><a href="#">tables</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">pages 1</a></li>
+                        <li><a href="#">team member profile</a></li>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">faq page</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">coming soon</a></li>
+                        <li><a href="#">maintenance</a></li>
+                        <li><a href="#">under construction</a></li>
+                        <li><a href="#">login / register</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">pages 2</a></li>
+                        <li><a href="#">clients</a></li>
+                        <li><a href="#">partners</a></li>
+                        <li><a href="#">terms of use</a></li>
+                        <li><a href="#">search results</a></li>
+                        <li><a href="#">404 page</a></li>
+                        <li><a href="#">503 page</a></li>
+                        <li><a href="#">make an appointment</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">departments</a></li>
+            <li><a href="#">timetable</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#"><img src="media/icons/search.png" /></a></li>
+        </ul>
+    </nav>
+   
+   <div class="hero-section">
+       <div class="container">
+            <h1 class="text-capitalize">Qualified Team of Experts</h1>
+            <p class="hidden-on-mobile">Our team of diagnosticians is always ready to help you be more healthy.</p>
+            <a href="#" class="text-uppercase text-bold">make an appointment</a>
+       </div>
+   </div> <!--END OF HERO SECTION-->
+
+   <div class="appointments">
+       <div class="container">
+            <div> <!--flex-->
+                <div class="appointments-flex"> <!--opening hours-->
+                    <div class="text-uppercase text-bold">
+                        <img src="media/icons/opening.png" /> opening hours
+                    </div>
+                    <div class="schedule">
+                        <div>
+                            <p>Mon–Fri</p>
+                            <p>8:00am–7:00pm</p>
+                        </div>
+                        <div>
+                            <p>Saturday</p>
+                            <p>9:00am–5:00pm</p>
+                        </div>
+                        <div>
+                            <p>Sunday</p>
+                            <p>9:00am–3:00pm</p>
+                        </div>
+                    </div>
+                    <div class="appointments-btn"><a href="#" class="text-uppercase text-bold">view timetable</a></div>
+                </div>
+                <div class="appointments-flex"> <!--timetable-->
+                    <div class="text-uppercase text-bold">
+                        <img src="media/icons/timetable.png" /> doctor's timetable
+                    </div>
+                    <p class="paragraph">The following is for guidance only to help you plan your appointment with a preferred doctor or nurse. It does not guarantee availability as the doctors or nurses may sometimes be attending to other duties.</p>
+                    <div class="appointments-btn"><a href="#" class="text-uppercase text-bold">view timetable</a></div>
+                </div> 
+                <div class="appointments-flex"> <!--appointments-->
+                    <div class="text-uppercase text-bold">
+                        <img src="media/icons/appointment.png" /> appointments
+                    </div>
+                    <p class="paragraph">The first step towards a healthy life is to schedule an appointment. Please contact our office by phone or complete the appointment request form.</p>
+                    <div class="appointments-btn"><a href="#" class="text-uppercase text-bold">make an appointment</a></div>
+                </div> 
+                <div class="appointments-flex"> <!--emergency-->
+                    <div class="text-uppercase text-bold">
+                        <img src="media/icons/emergency.png" /> emergency cases
+                    </div>
+                    <ul>
+                        <li><a href="tel:1-800-1234-567" class="text-bold">1-800-1234-567</a></li>
+                    </ul>
+                    <p class="paragraph">Call us!</p>
+                    <div class="appointments-btn"><a href="#" class="text-uppercase text-bold">contact page</a></div>
+                </div> 
+            </div>
+       </div>
+   </div> <!-- END OF APPOINTMENTS-->
+
+   <div class="about-us">
+       <div class="container">
+           <h2 class="text-capitalize text-bold">what makes us different</h2>
+           <div> <!--flex-->
+                <div class="about-us-flex">
+                    <div class="img-circle">
+                        <img src="media/icons/specialists.png" />
+                    </div>
+                    <h3 class="text-capitalize">qualified specialists</h3>
+                    <p class="paragraph">We hire the best specialists to deliver top-notch diagnostic services for you.</p>
+                </div>
+                <div class="about-us-flex">
+                    <div class="img-circle">
+                        <img src="media/icons/equipment.png" />
+                    </div>
+                    <h3 class="text-capitalize">modern equipment</h3>
+                    <p class="paragraph">We use the first-class medical equipment for timely diagnostics of various diseases.</p>
+                </div>
+                <div class="about-us-flex">
+                    <div class="img-circle">
+                        <img src="media/icons/diagnostics.png" />
+                    </div>
+                    <h3 class="text-capitalize">emergency diagnostics</h3>
+                    <p class="paragraph">Our emergency diagnostics services help you get the most accurate diagnosis in a minimal time.</p>
+                </div>
+           </div>
+
+       </div>
+   </div> <!-- END OF ABOUT US-->
+
+   <div class="diagnostics">
+       <div class="container">
+            <h2 class="text-capitalize">all kinds of diagnostics</h2>
+            <p class="paragraph">Medina offers the region’s most comprehensive range of diagnostic services, from MRI to X-ray.</p>
+            <a href="#" class="text-uppercase text-bold">free consultation</a>
+       </div>
+   </div> <!-- END OF DIAGNOSTICS-->
+
+   <div class="services">
+       <div class="container">
+            <h2 class="text-capitalize text-bold"> our services</h2>
+            <p class="paragraph">At our clinic, you can experience the best and the most extensive range of diagnostic services in the state. Feel free to browse our website for more information.</p>
+            <div class="specialities"> <!--flex-->
+                <div>
+                    <img src="media/images/pediatrics-320x320.jpg" />
+                    <a href="#">pediatrics</a>
+                </div>
+                <div>
+                    <img src="media/images/mri-brain-320x320.jpg" />
+                    <a href="#">mri of the brain</a>
+                </div>
+                <div>
+                    <img src="media/images/x-ray-320x320.jpg" />
+                    <a href="#">x-ray diagnostics</a>
+                </div>
+                <div>
+                    <img src="media/images/laboratory-320x320.jpg" />
+                    <a href="#">laboratory services</a>
+                </div>
+                <div>
+                    <img src="media/images/pregnancy-320x320.jpg" />
+                    <a href="#">pregnancy</a>
+                </div>
+                <div>
+                    <img src="media/images/equipment-320x320.jpg" />
+                    <a href="#">best equipment</a>
+                </div>
+            </div>
+            <div class="doctors">
+                <div>
+                    <img src="media/images/dr-01-384x410.jpg" />
+                    <div>dr. scott riley <span class="hidden-on-mobile">Chief Medical Officer, Pathologist</span></div>
+                    <a href="#">view full profile</a>
+                </div>
+                <div>
+                    <img src="media/images/dr-02-384x410.jpg" />
+                    <div>dr. jane fowler <span class="hidden-on-mobile">Clinical Laboratory Technologist</span></div>
+                    <a href="#">view full profile</a>
+                </div>
+                <div>
+                    <img src="media/images/dr-03-384x410.jpg" />
+                    <div>dr. eric snyder <span class="hidden-on-mobile">MRI Technologist</span></div>
+                    <a href="#">view full profile</a>
+                </div>
+                <div>
+                    <img src="media/images/dr-04-384x410.jpg" />
+                    <div>dr.martha schmidt <span class="hidden-on-mobile">EKG Technician</span></div>
+                    <a href="#">view full profile</a>
+                </div>
+                <div>
+                    <img src="media/images/dr-05-384x410.jpg" />
+                    <div>dr. james wilson <span class="hidden-on-mobile">Radiology Technician</span></div>
+                    <a href="#">view full profile</a>
+                </div>
+            </div>
+       </div>
+   </div> <!-- END OF SERVICES-->
+
+   <div class="testimonials">
+       <div class="container">  <!--flex-->
+            <h2>Testimonials</h2>
+            <div>
+                <p class="paragraph">I had a colonoscopy at Medina Diagnostic Center. From the moment I entered the center, I was greeted and treated warmly and respectfully and it was the best experience.</p>
+                <div>
+                    <img src="media/images/avatar-01-60x60.jpg" />
+                    <div>
+                        <span>betty wade</span>
+                        <span>patient</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="paragraph">I would like to thank and compliment the staff at Medina, including the outpatient, laboratory staff and cardiac division during my stay at your facility on July 9th and 10th.</p>
+                <div>
+                    <img src="media/images/avatar-02-60x60.jpg" />
+                    <div>
+                        <span>bryan green</span>
+                        <span>patient</span>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </div> <!-- END OF TESTIMONIALS-->
+
+   <div class="pediatric-diagnostics">
+        <div class="container">
+            <h2 class="text-capitalize">pediatric diagnostics</h2>
+            <p class="paragraph">Our center provides a vast range of pediatric diagnostic services for children all over our state.</p>
+            <a href="#" class="text-uppercase text-bold">free consultation</a>
+        </div>
+   </div> <!-- END OF PEDIATRIC DIAGNOSTICS-->
+
+   <div class="blog">
+       <div class="container">
+            <h2 class="text-capitalize">latest blog posts</h2>
+            <div> <!--flex-->
+                <div>
+                    <div><img src="media/images/post-01-370x250.jpg" /></div>
+                    <h3 class="text-capitalize">Reasons to Visit a Breast Specialist</h3>
+                    <ul>
+                        <li>June 21, 2018 at 8:12pm</li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                    <p class="paragraph">There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the importance of visiting...</p>
+                </div>
+                <div>
+                    <div><img src="media/images/post-02-370x250.jpg" /></div>
+                    <h3 class="text-capitalize">Picking the Right Diagnostic Services for Efficient Results</h3>
+                    <ul>
+                        <li>June 21, 2018 at 8:12pm</li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                    <p class="paragraph">There have been a lot of cases in which people were not provided with accurate reports that eventually affected their medical treatment. There is always...</p>
+                </div>
+                <div>
+                    <div><img src="media/images/post-03-370x250.jpg" /></div>
+                    <h3 class="text-capitalize">Preparing for an ECG in 8 Easy Steps: Tips From Our </h3>
+                    <ul>
+                        <li>June 21, 2018 at 8:12pm</li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                    <p class="paragraph">An ECG stands for an "electrocardiogram," which is a test that measures and records the electrical activity of the heart. It is used by doctors to obtain...</p>
+                </div>
+            </div>
+            <a href="#" class="text-bold">view all blog posts</a> 
+       </div>
+   </div> <!-- END OF BLOG-->
+
+   <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11396.474625199719!2d26.0538677!3d44.4307282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc01aa42ea789e2a1!2sSparkWare+Technologies!5e0!3m2!1sen!2sro!4v1542801638520" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div> <!--END MAP-->
+
+    <footer>
+        <div class="newsletter">
+            <h3>newsletter</h3>
+            <p class="paragraph">Enter your email address to receive up-to-date news, new patient information and other useful stuff, delivered right to your inbox.</p>
+            <input type="email" placeholder="Your e-mail..">
+            <button type="submit">Subscribe</button>
+        </div>
+        <div class="contact-us">
+            <h3>contact us</h3>
+            <ul>
+                <li>
+                    <img src="media/icons/phone.png" />
+                    <a href="tel:1-800-1234-567">1-800-1234-567</a>  &nbsp; &nbsp;
+                    <a href="tel:1-800-3214-321">1-800-3214-321</a>
+                </li>
+                <li>
+                    <img src="media/icons/pin.png" />
+                    <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11396.474625199719!2d26.0538677!3d44.4307282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc01aa42ea789e2a1!2sSparkWare+Technologies!5e0!3m2!1sen!2sro!4v1542801638520">2130 Fulton Street San Diego, CA 94117-1080 USA</a>
+                </li>
+                <li>
+                    <img src="media/icons/envelope.png" />
+                    <a href="mailto:info@demolink.org">info@demolink.org</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <img src="media/logo-dark.png" />
+            <ul>
+                <li><a href="#"><img src="media/icons/facebook.png" /></a></li>
+                <li><a href="#"><img src="media/icons/twitter.png" /></a></li>
+                <li><a href="#"><img src="media/icons/google.png" /></a></li>
+                <li><a href="#"><img src="media/icons/rss.png" /></a></li>
+            </ul>
+            <p class="paragraph">&copy;2018 Medina diagnostic center. <a href="#">Privacy Policy.</a></p>
+        </div>
+    </footer>
+
+<!--SCRIPT-->    
+<script>
+        /*show & hide hamburger & ellipse icons*/
+        var isMenuHidden = true;
+        var isEllipseHidden = true;
+        function menuToggle(x) {
+            var nav = document.querySelector('nav');
+            var logo = document.querySelector('.logo');
+            console.log(nav);
+            console.log(logo);
+            if(isMenuHidden) {
+                nav.style="position:absolute; left:0;";
+                logo.style="position:absolute; left:0;";
+                isMenuHidden = false;
+            } else {
+                nav.style="position:absolute; left:-300px;";
+                logo.style="position:absolute; left:-300px;";
+                isMenuHidden = true;
+            }          
+            x.classList.toggle("change");  
+        }
+
+         
+        function ellipseToggle(x) {
+            var elipse = document.querySelector('.ellipses');
+            if(isEllipseHidden) {
+                elipse.style="position:absolute; right:0;";
+                isEllipseHidden = false;
+            } else {
+                elipse.style="position:absolute; right:-333px;";
+                isEllipseHidden = true;
+            }          
+            x.classList.toggle("change");  
+        }
+
+        /*scroll*/
+        var myScrollFunction = function() {
+        var meniu = document.getElementById("menu");
+        var y = window.scrollY;
+        if (y >= 100) {
+            meniu.className = "menu-full"
+        } else {
+            meniu.className = "menu"
+        }
+};
+
+window.addEventListener("scroll", myScrollFunction);
+
+</script>
+</body>
+</html>
