@@ -1,2 +1,2 @@
-#final-project-html-css
+# final-project-html-css
 HTML project started from scratch (no templates used).
