@@ -1,1 +1,1 @@
-HTML project started from scratch (no templates used)
+HTML project started from scratch (no templates used).
